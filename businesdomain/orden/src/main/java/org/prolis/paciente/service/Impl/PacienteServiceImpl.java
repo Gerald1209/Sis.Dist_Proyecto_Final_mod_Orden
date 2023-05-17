@@ -1,9 +1,9 @@
-package org.prolis.pais.service.Impl;
+package org.prolis.paciente.service.Impl;
 
 import lombok.RequiredArgsConstructor;
-import org.prolis.pais.entity.Pais;
-import org.prolis.pais.repository.PaisRepository;
-import org.prolis.pais.service.PaisService;
+import org.prolis.paciente.entity.Paciente;
+import org.prolis.paciente.repository.PacienteRepository;
+import org.prolis.paciente.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,27 +11,27 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class PaisServiceImpl implements PaisService {
+public class PacienteServiceImpl implements PacienteService {
 
     @Autowired
-    private final PaisRepository paisRepository;
+    private final PacienteRepository paisRepository;
     @Override
-    public Pais guardarPais(Pais p) {
+    public Paciente guardarPais(Paciente p) {
         return paisRepository.save(p);
     }
 
     @Override
-    public Pais listarPorId(Long id) {
+    public Paciente listarPorId(Long id) {
         return null;
     }
 
     @Override
-    public List<Pais> obtenerPais() {
+    public List<Paciente> obtenerPais() {
         return paisRepository.findAll();
     }
 
     @Override
-    public Pais actualizarPais(Pais p) {
+    public Paciente actualizarPais(Paciente p) {
         return null;
     }
 

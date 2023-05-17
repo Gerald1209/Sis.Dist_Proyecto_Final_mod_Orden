@@ -1,4 +1,4 @@
-package org.prolis.pais.entity;
+package org.prolis.paciente.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Pais {
+public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idpais;
