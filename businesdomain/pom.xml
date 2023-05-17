@@ -94,6 +94,6 @@
     </dependencies>
 
     <modules>
-        <module>paciente</module>
+        <module>orden</module>
     </modules>
 </project>
