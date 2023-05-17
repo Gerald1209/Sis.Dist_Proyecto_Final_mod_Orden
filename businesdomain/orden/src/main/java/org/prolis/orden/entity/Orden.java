@@ -3,6 +3,7 @@ package org.prolis.orden.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.prolis.empleado.entity.Empleado;
+import org.prolis.orden_detalle.entity.OrdenDetalle;
 import org.prolis.paciente.entity.Paciente;
 import org.prolis.tipo_orden.entity.TipoOrden;
 import org.prolis.tipo_servicio.entity.TipoServicio;
@@ -13,6 +14,7 @@ import java.util.Date;
 
 @Entity
 @Data
+@Table(name = "tbl_ordenes")
 public class Orden {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,5 +53,8 @@ public class Orden {
     @JoinColumn(name = "IdTipoOrden")
     private TipoOrden orden;
 
-
+    //Para obtener todos sus detalles ?????
+    //TODO: Confirmar si este es su funcionamiento
+    @OneToMany(mappedBy = "orden")
+    private Collection<OrdenDetalle> children;
 }
