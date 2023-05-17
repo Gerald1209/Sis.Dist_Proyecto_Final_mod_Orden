@@ -5,9 +5,9 @@ import org.prolis.tipo_servicio.entity.TipoServicio;
 import java.util.List;
 
 public interface TipoServicioService {
-    TipoServicio guardarPais(TipoServicio p);
+    TipoServicio guardarTipoServicio(TipoServicio ts);
     TipoServicio listarPorId(Long id);
-    List<TipoServicio> obtenerPais();
-    TipoServicio actualizarPais(TipoServicio p);
-    void eliminarPais(Long id);
+    List<TipoServicio> obtenerTipoServicio();
+    TipoServicio actualizarTipoServicio(TipoServicio ts);
+    void eliminarTipoServicio(Long id);
 }

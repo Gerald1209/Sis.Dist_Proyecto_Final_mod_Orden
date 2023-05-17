@@ -5,9 +5,9 @@ import org.prolis.tipo_orden.entity.TipoOrden;
 import java.util.List;
 
 public interface TipoOrdenService {
-    TipoOrden guardarPais(TipoOrden p);
+    TipoOrden guardarTipoOrden(TipoOrden to);
     TipoOrden listarPorId(Long id);
-    List<TipoOrden> obtenerPais();
-    TipoOrden actualizarPais(TipoOrden p);
-    void eliminarPais(Long id);
+    List<TipoOrden> obtenerTipoOrden();
+    TipoOrden actualizarTipoOrden(TipoOrden to);
+    void eliminarTipoOrden(Long id);
 }

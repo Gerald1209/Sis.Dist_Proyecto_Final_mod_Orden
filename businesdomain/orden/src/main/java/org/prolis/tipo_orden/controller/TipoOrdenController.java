@@ -11,21 +11,21 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("api/pais")
+@RequestMapping("api/tipo_orden")
 public class TipoOrdenController {
-    private TipoOrdenService paisService;
+    private TipoOrdenService tipoOrdenService;
 
     @PostMapping
-    public ResponseEntity<TipoOrden> guardarPais(@RequestBody TipoOrden p)
+    public ResponseEntity<TipoOrden> guardarTipoOrdenService(@RequestBody TipoOrden to)
     {
-        TipoOrden tipoOrden = paisService.guardarPais(p);
+        TipoOrden tipoOrden = tipoOrdenService.guardarTipoOrden(to);
         return new ResponseEntity<>(tipoOrden, HttpStatus.CREATED);
     }
 
     // http://localhost:8080/api/pacientes
     @GetMapping
-    public ResponseEntity<List<TipoOrden>> listarPais(){
-        List<TipoOrden> paises = paisService.obtenerPais();
-        return new ResponseEntity<>(paises, HttpStatus.OK);
+    public ResponseEntity<List<TipoOrden>> listarTipoOrden(){
+        List<TipoOrden> tipo_orden = tipoOrdenService.obtenerTipoOrden();
+        return new ResponseEntity<>(tipo_orden, HttpStatus.OK);
     }
 }

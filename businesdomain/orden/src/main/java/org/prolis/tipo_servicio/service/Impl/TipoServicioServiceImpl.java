@@ -16,8 +16,8 @@ public class TipoServicioServiceImpl implements TipoServicioService {
     @Autowired
     private final TipoServicioRepository tipoServicioRepository;
     @Override
-    public TipoServicio guardarPais(TipoServicio p) {
-        return tipoServicioRepository.save(p);
+    public TipoServicio guardarTipoServicio(TipoServicio ts) {
+        return tipoServicioRepository.save(ts);
     }
 
     @Override
@@ -26,17 +26,17 @@ public class TipoServicioServiceImpl implements TipoServicioService {
     }
 
     @Override
-    public List<TipoServicio> obtenerPais() {
+    public List<TipoServicio> obtenerTipoServicio() {
         return tipoServicioRepository.findAll();
     }
 
     @Override
-    public TipoServicio actualizarPais(TipoServicio p) {
+    public TipoServicio actualizarTipoServicio(TipoServicio ts) {
         return null;
     }
 
     @Override
-    public void eliminarPais(Long id) {
+    public void eliminarTipoServicio(Long id) {
 
     }
 }

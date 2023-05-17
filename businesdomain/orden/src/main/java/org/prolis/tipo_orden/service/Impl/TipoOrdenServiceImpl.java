@@ -14,10 +14,10 @@ import java.util.List;
 public class TipoOrdenServiceImpl implements TipoOrdenService {
 
     @Autowired
-    private final TipoOrdenRepository paisRepository;
+    private final TipoOrdenRepository tipo_ordenRepository;
     @Override
-    public TipoOrden guardarPais(TipoOrden p) {
-        return paisRepository.save(p);
+    public TipoOrden guardarTipoOrden(TipoOrden to) {
+        return tipo_ordenRepository.save(to);
     }
 
     @Override
@@ -26,17 +26,17 @@ public class TipoOrdenServiceImpl implements TipoOrdenService {
     }
 
     @Override
-    public List<TipoOrden> obtenerPais() {
-        return paisRepository.findAll();
+    public List<TipoOrden> obtenerTipoOrden() {
+        return tipo_ordenRepository.findAll();
     }
 
     @Override
-    public TipoOrden actualizarPais(TipoOrden p) {
+    public TipoOrden actualizarTipoOrden(TipoOrden p) {
         return null;
     }
 
     @Override
-    public void eliminarPais(Long id) {
+    public void eliminarTipoOrden(Long id) {
 
     }
 }
