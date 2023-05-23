@@ -23,11 +23,9 @@ public class Empleado {
     private Long IdEstadoCivil;
     private Long IdSexo;
     private Long IdNacionalidad;
-
     private String NumIdentificacion;
     private String NumINSS;
     private String CodMinsa;
-
     private String PrimerNombre;
     private String SegundoNombre;
     private String PrimerApellido;
@@ -41,5 +39,5 @@ public class Empleado {
     private Date FechaContrato;
     private String UrlFoto;
     private String Activo;
-    private int Estado;
+
 }

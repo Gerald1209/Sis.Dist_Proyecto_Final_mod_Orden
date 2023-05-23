@@ -3,6 +3,7 @@ package org.prolis.orden_detalle.controller;
 import lombok.AllArgsConstructor;
 import org.prolis.orden_detalle.entity.OrdenDetalle;
 import org.prolis.orden_detalle.service.OrdenDetalleService;
+import org.prolis.tipo_servicio.entity.TipoServicio;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,5 +28,11 @@ public class OrdenDetalleController {
     public ResponseEntity<List<OrdenDetalle>> listarPais(){
         List<OrdenDetalle> paises = ordenDetalleService.obtenerPais();
         return new ResponseEntity<>(paises, HttpStatus.OK);
+    }
+
+    @PutMapping("{id}")
+    public  ResponseEntity<OrdenDetalle> listarPorId(@PathVariable("id") Long id){
+        OrdenDetalle paises = ordenDetalleService.listarPorId(id);
+        return  new ResponseEntity<>(paises,HttpStatus.OK);
     }
 }

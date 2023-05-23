@@ -8,26 +8,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class EmpleadoServiceImpl implements EmpleadoService {
 
     @Autowired
-    private final EmpleadoRepository paisRepository;
+    private final EmpleadoRepository empleadoRepository;
     @Override
-    public Empleado guardarPais(Empleado p) {
-        return paisRepository.save(p);
+    public Empleado guardarEmpleados(Empleado e) {
+        return empleadoRepository.save(e);
     }
 
     @Override
     public Empleado listarPorId(Long id) {
-        return null;
+        Optional<Empleado> optionalEmpleado = empleadoRepository.findById(id);
+        return optionalEmpleado.get();
     }
 
     @Override
-    public List<Empleado> obtenerPais() {
-        return paisRepository.findAll();
+    public List<Empleado> obtenerEmpleados() {
+        return empleadoRepository.findAll();
     }
 
     @Override

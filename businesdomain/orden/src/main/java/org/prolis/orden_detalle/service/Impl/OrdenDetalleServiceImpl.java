@@ -1,13 +1,16 @@
 package org.prolis.orden_detalle.service.Impl;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.prolis.orden_detalle.entity.OrdenDetalle;
 import org.prolis.orden_detalle.repository.OrdenDetalleRepository;
 import org.prolis.orden_detalle.service.OrdenDetalleService;
+import org.prolis.tipo_servicio.entity.TipoServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -21,8 +24,10 @@ public class OrdenDetalleServiceImpl implements OrdenDetalleService {
     }
 
     @Override
+
     public OrdenDetalle listarPorId(Long id) {
-        return null;
+        Optional<OrdenDetalle> optionalOrdenDetalle = paisRepository.findById(id);
+        return optionalOrdenDetalle.get();
     }
 
     @Override

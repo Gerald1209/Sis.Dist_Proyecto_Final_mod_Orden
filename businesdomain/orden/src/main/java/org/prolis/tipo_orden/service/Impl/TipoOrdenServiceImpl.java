@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -22,7 +23,8 @@ public class TipoOrdenServiceImpl implements TipoOrdenService {
 
     @Override
     public TipoOrden listarPorId(Long id) {
-        return null;
+        Optional<TipoOrden> optionalTipoOrden = tipo_ordenRepository.findById(id);
+        return optionalTipoOrden.get();
     }
 
     @Override
