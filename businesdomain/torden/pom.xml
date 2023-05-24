@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>com.prolis</groupId>
-    <artifactId>orden</artifactId>
+    <artifactId>torden</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>orden</name>
-    <description>orden</description>
+    <name>torden</name>
+    <description>torden</description>
     <packaging>pom</packaging>
 
     <build>

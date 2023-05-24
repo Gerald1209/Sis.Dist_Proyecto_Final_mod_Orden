@@ -94,6 +94,11 @@
     </dependencies>
 
     <modules>
+        <module>paciente</module>
+        <module>torden</module>
+        <module>tservicio</module>
+        <module>empleado</module>
+        <module>examen</module>
         <module>orden</module>
     </modules>
 </project>

@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>com.prolis</groupId>
-    <artifactId>orden</artifactId>
+    <artifactId>paciente</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>orden</name>
-    <description>orden</description>
+    <name>paciente</name>
+    <description>paciente</description>
     <packaging>pom</packaging>
 
     <build>

@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>com.prolis</groupId>
-    <artifactId>orden</artifactId>
+    <artifactId>tservicio</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>orden</name>
-    <description>orden</description>
+    <name>tservicio</name>
+    <description>tservicio</description>
     <packaging>pom</packaging>
 
     <build>
@@ -22,9 +22,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
             </plugin>
         </plugins>
     </build>

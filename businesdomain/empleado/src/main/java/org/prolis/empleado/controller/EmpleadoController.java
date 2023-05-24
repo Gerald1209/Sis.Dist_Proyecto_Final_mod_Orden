@@ -3,7 +3,6 @@ package org.prolis.empleado.controller;
 import lombok.AllArgsConstructor;
 import org.prolis.empleado.entity.Empleado;
 import org.prolis.empleado.service.EmpleadoService;
-import org.prolis.tipo_orden.entity.TipoOrden;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
