@@ -11,15 +11,15 @@ import java.util.Date;
 public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idpais;
-
-    private Long IdIdentificacion;
-    private Long IdPaisNac;
-    private Long IdDepartamentoNac;
-    private Long IdMunicipioNac;
-    private Long IdPaisRes;
-    private Long IdDepartamentoRes;
+    private Long IdEmpleado;
+    private Long IdProfesiones;
     private Long IdMunicipioRes;
+    private Long IdMunicipioNac;
+    private Long IdDepartamentoNac;
+    private Long IdDepartamentoRes;
+    private Long IdPaisNac;
+    private Long IdPaisRes;
+    private Long IdIdentificacion;
     private Long IdEstadoCivil;
     private Long IdSexo;
     private Long IdNacionalidad;

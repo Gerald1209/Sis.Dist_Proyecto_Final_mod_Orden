@@ -16,13 +16,6 @@ import java.util.List;
 public class EmpleadoController {
     private EmpleadoService empleadosService;
 
-    @PostMapping
-    public ResponseEntity<Empleado> guardarEmpleados(@RequestBody Empleado e)
-    {
-        Empleado emp = empleadosService.guardarEmpleados(e);
-        return new ResponseEntity<>(emp, HttpStatus.CREATED);
-    }
-
     // http://localhost:8080/api/empleados
     @GetMapping
     public ResponseEntity<List<Empleado>> listarEmpleados(){

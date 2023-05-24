@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pais (1)" />
+        <module name="orden" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="m_orden" target="18" />
-      <module name="orden" target="18" />
       <module name="paciente" target="17" />
       <module name="pais" target="17" />
     </bytecodeTargetLevel>

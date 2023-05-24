@@ -16,13 +16,6 @@ import java.util.List;
 public class TipoOrdenController {
     private TipoOrdenService tipoOrdenService;
 
-    @PostMapping
-    public ResponseEntity<TipoOrden> guardarTipoOrdenService(@RequestBody TipoOrden to)
-    {
-        TipoOrden tipoOrden = tipoOrdenService.guardarTipoOrden(to);
-        return new ResponseEntity<>(tipoOrden, HttpStatus.CREATED);
-    }
-
     // http://localhost:8080/api/tipo_orden
     @GetMapping
     public ResponseEntity<List<TipoOrden>> listarTipoOrden(){

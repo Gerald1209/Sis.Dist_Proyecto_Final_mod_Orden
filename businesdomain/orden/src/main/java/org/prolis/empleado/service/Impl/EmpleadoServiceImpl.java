@@ -16,10 +16,6 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 
     @Autowired
     private final EmpleadoRepository empleadoRepository;
-    @Override
-    public Empleado guardarEmpleados(Empleado e) {
-        return empleadoRepository.save(e);
-    }
 
     @Override
     public Empleado listarPorId(Long id) {
@@ -30,15 +26,5 @@ public class EmpleadoServiceImpl implements EmpleadoService {
     @Override
     public List<Empleado> obtenerEmpleados() {
         return empleadoRepository.findAll();
-    }
-
-    @Override
-    public Empleado actualizarPais(Empleado p) {
-        return null;
-    }
-
-    @Override
-    public void eliminarPais(Long id) {
-
     }
 }

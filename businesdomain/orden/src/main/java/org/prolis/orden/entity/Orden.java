@@ -32,7 +32,7 @@ public class Orden {
     private Date FechaOrden;
     private String Activo;
     private LocalDateTime FechaImprime;
-    //creo que dijo que desde fecha imprime se pueden quitar los campos, si no, cambiar
+
 
     //TBD : Investigar Funcionamiento de relaciones en LOMBOK --
     //TODO: Para mientras queda asi https://medium.com/huawei-developers/database-relationships-in-spring-data-jpa-8d7181f50f60
