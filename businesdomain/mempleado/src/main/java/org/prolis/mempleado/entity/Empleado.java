@@ -36,7 +36,7 @@ public class Empleado {
     @Column(name = "idpaisres")
     private Long IdPaisRes;
 
-    @Column(name = "ididentificacion")
+    @Column(name = "idIdentificacion")
     private Long IdIdentificacion;
 
     @Column(name = "idestadocivil")
