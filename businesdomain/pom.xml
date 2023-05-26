@@ -94,7 +94,6 @@
     </dependencies>
 
     <modules>
-        <module>paciente</module>
         <module>torden</module>
         <module>tservicio</module>
         <module>empleado</module>
@@ -105,7 +104,7 @@
         <module>mempleado</module>
         <module>morden</module>
         <module>mperfil</module>
-        <module>mpaciente</module>
+        <module>mpacientes</module>
         <module>mexamen</module>
         <module>mtorden</module>
 

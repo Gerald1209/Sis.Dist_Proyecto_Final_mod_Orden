@@ -8,12 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mempleado" />
         <module name="mperfil" />
-        <module name="mpaciente" />
         <module name="mexamen" />
         <module name="morden" />
+        <module name="mpacientes" />
         <module name="demo1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mpaciente" target="17" />
+      <module name="mpaciente.main" target="17" />
+      <module name="mpaciente.test" target="17" />
+      <module name="paciente" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -22,6 +28,7 @@
       <module name="mexamen" options="-parameters" />
       <module name="morden" options="-parameters" />
       <module name="mpaciente" options="-parameters" />
+      <module name="mpacientes" options="-parameters" />
       <module name="mperfil" options="-parameters" />
     </option>
   </component>
