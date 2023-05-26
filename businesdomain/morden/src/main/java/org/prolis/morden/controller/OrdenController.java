@@ -1,8 +1,8 @@
-package org.prolis.examen.controller;
+package org.prolis.morden.controller;
 
 import lombok.AllArgsConstructor;
-import org.prolis.examen.entity.Examen;
-import org.prolis.examen.service.ExamenService;
+import org.prolis.morden.entity.Orden;
+import org.prolis.morden.service.OrdenService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,20 +12,20 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping("api/pais")
-public class ExamenController {
-    private ExamenService paisService;
+public class OrdenController {
+    private OrdenService ordenService;
 
     @PostMapping
-    public ResponseEntity<Examen> guardarPais(@RequestBody Examen p)
+    public ResponseEntity<Orden> guardarPais(@RequestBody Orden p)
     {
-        Examen pais = paisService.guardarPais(p);
+        Orden pais = ordenService.guardarPais(p);
         return new ResponseEntity<>(pais, HttpStatus.CREATED);
     }
 
     // http://localhost:8080/api/pacientes
     @GetMapping
-    public ResponseEntity<List<Examen>> listarPais(){
-        List<Examen> paises = paisService.obtenerPais();
+    public ResponseEntity<List<Orden>> listarPais(){
+        List<Orden> paises = ordenService.obtenerPais();
         return new ResponseEntity<>(paises, HttpStatus.OK);
     }
 }

@@ -1,6 +1,6 @@
-package org.prolis.examen.service;
+package org.prolis.mexamen.service;
 
-import org.prolis.examen.entity.Examen;
+import org.prolis.mexamen.entity.Examen;
 
 import java.util.List;
 

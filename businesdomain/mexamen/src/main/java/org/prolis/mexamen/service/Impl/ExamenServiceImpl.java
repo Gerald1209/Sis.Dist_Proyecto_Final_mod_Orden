@@ -1,9 +1,9 @@
-package org.prolis.examen.service.Impl;
+package org.prolis.mexamen.service.Impl;
 
 import lombok.RequiredArgsConstructor;
-import org.prolis.examen.entity.Examen;
-import org.prolis.examen.repository.ExamenRepository;
-import org.prolis.examen.service.ExamenService;
+import org.prolis.mexamen.entity.Examen;
+import org.prolis.mexamen.repository.ExamenRepository;
+import org.prolis.mexamen.service.ExamenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

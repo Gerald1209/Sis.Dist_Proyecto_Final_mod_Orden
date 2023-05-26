@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mempleado" />
+        <module name="mtservicio" />
         <module name="mperfil" />
+        <module name="mpacientes" />
+        <module name="mempleado" />
+        <module name="mtorden" />
         <module name="mexamen" />
         <module name="morden" />
-        <module name="mpacientes" />
         <module name="demo1" />
       </profile>
     </annotationProcessing>
@@ -18,6 +20,7 @@
       <module name="mpaciente" target="17" />
       <module name="mpaciente.main" target="17" />
       <module name="mpaciente.test" target="17" />
+      <module name="orden" target="17" />
       <module name="paciente" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -30,6 +33,8 @@
       <module name="mpaciente" options="-parameters" />
       <module name="mpacientes" options="-parameters" />
       <module name="mperfil" options="-parameters" />
+      <module name="mtorden" options="-parameters" />
+      <module name="mtservicio" options="-parameters" />
     </option>
   </component>
 </project>
