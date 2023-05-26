@@ -11,33 +11,88 @@ import java.util.Date;
 public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long IdEmpleado;
-    private Long IdProfesiones;
-    private Long IdMunicipioRes;
-    private Long IdMunicipioNac;
-    private Long IdDepartamentoNac;
-    private Long IdDepartamentoRes;
-    private Long IdPaisNac;
-    private Long IdPaisRes;
-    private Long IdIdentificacion;
-    private Long IdEstadoCivil;
-    private Long IdSexo;
-    private Long IdNacionalidad;
-    private String NumIdentificacion;
-    private String NumINSS;
-    private String CodMinsa;
-    private String PrimerNombre;
-    private String SegundoNombre;
-    private String PrimerApellido;
-    private String SegundoApellido;
-    private Date FechaNac;
-    private String EdadIngreso;
-    private String Email;
-    private String DireccionDomiciliar;
-    private String TelefonoDomiciliar;
-    private String TelefonoMovil;
-    private Date FechaContrato;
-    private String UrlFoto;
-    private String Activo;
 
+    @Column(name = "idempleado")
+    private Long IdEmpleado;
+
+    @Column(name = "idprofesiones")
+    private Long IdProfesiones;
+
+    @Column(name = "idmunicipiores")
+    private Long IdMunicipioRes;
+
+    @Column(name = "idmunicipionac")
+    private Long IdMunicipioNac;
+
+    @Column(name = "idepartamentonac")
+    private Long IdDepartamentoNac;
+
+    @Column(name = "iddepartamentores")
+    private Long IdDepartamentoRes;
+
+    @Column(name = "idpaisnac")
+    private Long IdPaisNac;
+
+    @Column(name = "idpaisres")
+    private Long IdPaisRes;
+
+    @Column(name = "ididentificacion")
+    private Long IdIdentificacion;
+
+    @Column(name = "idestadocivil")
+    private Long IdEstadoCivil;
+
+    @Column(name = "idestadocivil")
+    private Long IdSexo;
+
+    @Column(name = "idnacionalidad")
+    private Long IdNacionalidad;
+
+    @Column(name = "numidentificacion")
+    private String NumIdentificacion;
+
+    @Column(name = "numINSS")
+    private String NumINSS;
+
+    @Column(name = "codminsa")
+    private String CodMinsa;
+
+    @Column(name = "primernombre")
+    private String PrimerNombre;
+
+    @Column(name = "segundonombre")
+    private String SegundoNombre;
+
+    @Column(name = "primerapellido")
+    private String PrimerApellido;
+
+    @Column(name = "segundoapellido")
+    private String SegundoApellido;
+
+    @Column(name = "fechanac")
+    private Date FechaNac;
+
+    @Column(name = "edadingreso")
+    private String EdadIngreso;
+
+    @Column(name = "email")
+    private String Email;
+
+    @Column(name = "direcciondomiciliar")
+    private String DireccionDomiciliar;
+
+    @Column(name = "telefonodomiciliar")
+    private String TelefonoDomiciliar;
+
+    @Column(name = "telefonomovil")
+    private String TelefonoMovil;
+
+    @Column(name = "fechacontrato")
+    private Date FechaContrato;
+
+    @Column(name = "urlfoto")
+    private String UrlFoto;
+
+    @Column(name = "activo")
+    private String Activo;
 }

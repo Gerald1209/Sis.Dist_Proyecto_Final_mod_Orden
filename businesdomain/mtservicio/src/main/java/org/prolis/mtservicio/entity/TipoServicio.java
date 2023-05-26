@@ -9,7 +9,11 @@ import lombok.Data;
 public class TipoServicio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Column(name = "idtiposervicio")
     private Long IdTipoServicio;
+
+    @Column(name = "descripcion")
     private String Descripcion;
 }
 

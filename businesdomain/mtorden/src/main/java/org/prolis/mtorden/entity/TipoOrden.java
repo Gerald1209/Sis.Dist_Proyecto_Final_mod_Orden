@@ -9,7 +9,11 @@ import lombok.Data;
 public class TipoOrden {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Column(name = "idtipoorden")
     private Long IdTipoOrden;
+
+    @Column(name = "descripcion")
     private String Descripcion;
 }
 
