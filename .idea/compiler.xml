@@ -7,6 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mempleado" />
+        <module name="mperfil" />
+        <module name="mpaciente" />
+        <module name="mexamen" />
+        <module name="morden" />
         <module name="demo1" />
       </profile>
     </annotationProcessing>
@@ -15,6 +19,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo1" options="-parameters" />
       <module name="mempleado" options="-parameters" />
+      <module name="mexamen" options="-parameters" />
+      <module name="morden" options="-parameters" />
+      <module name="mpaciente" options="-parameters" />
+      <module name="mperfil" options="-parameters" />
     </option>
   </component>
 </project>
