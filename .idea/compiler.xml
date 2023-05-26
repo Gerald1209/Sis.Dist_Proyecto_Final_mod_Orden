@@ -16,16 +16,18 @@
         <module name="mexamen" />
         <module name="morden" />
         <module name="mreligion" />
-        <module name="demo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo1" target="17" />
+      <module name="empleado" target="17" />
       <module name="examen" target="17" />
       <module name="mpaciente" target="17" />
       <module name="mpaciente.main" target="17" />
       <module name="mpaciente.test" target="17" />
-      <module name="orden" target="17" />
       <module name="paciente" target="17" />
+      <module name="torden" target="17" />
+      <module name="tservicio" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

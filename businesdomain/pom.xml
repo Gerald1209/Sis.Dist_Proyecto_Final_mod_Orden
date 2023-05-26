@@ -94,11 +94,6 @@
     </dependencies>
 
     <modules>
-        <module>torden</module>
-        <module>tservicio</module>
-        <module>empleado</module>
-        <module>demo1</module>
-
         <module>mempleado</module>
         <module>morden</module>
         <module>mperfil</module>

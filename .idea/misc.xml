@@ -8,7 +8,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/businesdomain/demo1/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/mempleado/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/mpaciente/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/mexamen/pom.xml" />
@@ -20,9 +19,12 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/businesdomain/empleado/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/examen/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/mpaciente/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/paciente/pom.xml" />
+        <option value="$PROJECT_DIR$/businesdomain/torden/pom.xml" />
+        <option value="$PROJECT_DIR$/businesdomain/tservicio/pom.xml" />
       </set>
     </option>
   </component>
