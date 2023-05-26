@@ -107,6 +107,7 @@
         <module>mpacientes</module>
         <module>mexamen</module>
         <module>mtorden</module>
+        <module>mtservicio</module>
 
 
     </modules>

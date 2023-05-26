@@ -1,4 +1,4 @@
-package org.prolis.mtorden.controller;
+package org.prolis.mtorden.repository;
 
 import org.prolis.mtorden.entity.TipoOrden;
 import org.springframework.data.jpa.repository.JpaRepository;

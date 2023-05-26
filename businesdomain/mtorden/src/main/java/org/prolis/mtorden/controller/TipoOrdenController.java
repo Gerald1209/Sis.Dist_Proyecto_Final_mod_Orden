@@ -1,8 +1,8 @@
-package org.prolis.tipo_orden.controller;
+package org.prolis.mtorden.controller;
 
 import lombok.AllArgsConstructor;
-import org.prolis.tipo_orden.entity.TipoOrden;
-import org.prolis.tipo_orden.service.TipoOrdenService;
+import org.prolis.mtorden.entity.TipoOrden;
+import org.prolis.mtorden.service.TipoOrdenService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
