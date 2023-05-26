@@ -22,4 +22,10 @@ public class PacienteController {
         List<Paciente> paciente = pacienteService.obtenerPacientes();
         return new ResponseEntity<>(paciente, HttpStatus.OK);
     }
+
+    @GetMapping("{id}")
+    public  ResponseEntity<Paciente> listarPorId(@PathVariable("id") Long id){
+        Paciente tiposervicio = pacienteService.listarPorId(id);
+        return  new ResponseEntity<>(tiposervicio,HttpStatus.OK);
+    }
 }
