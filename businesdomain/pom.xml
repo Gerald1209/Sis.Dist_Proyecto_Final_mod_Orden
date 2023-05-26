@@ -107,6 +107,7 @@
         <module>mperfil</module>
         <module>mpaciente</module>
         <module>mexamen</module>
+        <module>mtorden</module>
 
 
     </modules>
