@@ -100,5 +100,11 @@
         <module>empleado</module>
         <module>examen</module>
         <module>orden</module>
+        <module>demo1</module>
+
+        <module>mempleado</module>
+
+
+
     </modules>
 </project>
