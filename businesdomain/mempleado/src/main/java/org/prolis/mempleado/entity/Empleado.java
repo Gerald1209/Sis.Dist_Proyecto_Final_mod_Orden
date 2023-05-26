@@ -24,7 +24,7 @@ public class Empleado {
     @Column(name = "idmunicipionac")
     private Long IdMunicipioNac;
 
-    @Column(name = "idepartamentonac")
+    @Column(name = "iddepartamentonac")
     private Long IdDepartamentoNac;
 
     @Column(name = "iddepartamentores")
