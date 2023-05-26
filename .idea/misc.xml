@@ -15,15 +15,15 @@
         <option value="$PROJECT_DIR$/businesdomain/mperfil/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/morden/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/mpacientes/pom.xml" />
+        <option value="$PROJECT_DIR$/businesdomain/orden/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/businesdomain/mpaciente/pom.xml" />
-        <option value="$PROJECT_DIR$/businesdomain/orden/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/paciente/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="18" project-jdk-type="JavaSDK" />
 </project>
