@@ -11,19 +11,24 @@ import java.util.Date;
 public class Examen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idexamen")
     private Long IdExamen;
-    private Long IdAreaLabServicio;
-    private Long IdMetodologia;
-    private Long IdCategoriaExamenes;
-    private Long IdTipoMuestra;
-    private Long IdUnidadMedidas;
-    private Long IdTipoResultado;
-    private String Descripcion;
-    private String DescripcionCorta;
-    private String LisCode;
-    private String Conteo;
-    private String Confidencial;
-    private String Calculado;
-    private Integer Estado;
 
+    @Column(name = "idarealabservicio")
+    private Long IdAreaLabServicio;
+
+    @Column(name = "idtipomuestra")
+    private Long IdTipoMuestra;
+
+    @Column(name = "idunidadmedidas")
+    private Long IdUnidadMedidas;
+
+    @Column(name = "descripcion")
+    private String Descripcion;
+
+    @Column(name = "descripcioncorta")
+    private String DescripcionCorta;
+
+    @Column(name = "idperfil")
+    private Long IdPerfil;
 }

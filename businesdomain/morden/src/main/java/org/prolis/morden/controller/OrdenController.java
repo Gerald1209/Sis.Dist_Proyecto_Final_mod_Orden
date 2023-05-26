@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("api/pais")
+@RequestMapping("api/orden")
 public class OrdenController {
     private OrdenService ordenService;
 

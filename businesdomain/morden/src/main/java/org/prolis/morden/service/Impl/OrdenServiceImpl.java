@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -21,22 +22,9 @@ public class OrdenServiceImpl implements OrdenService {
     }
 
     @Override
-    public Orden listarPorId(Long id) {
-        return null;
-    }
-
-    @Override
     public List<Orden> obtenerPais() {
         return ordenRepository.findAll();
     }
 
-    @Override
-    public Orden actualizarPais(Orden p) {
-        return null;
-    }
 
-    @Override
-    public void eliminarPais(Long id) {
-
-    }
 }
