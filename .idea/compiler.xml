@@ -12,8 +12,10 @@
         <module name="mpacientes" />
         <module name="mempleado" />
         <module name="mtorden" />
+        <module name="mtsangre" />
         <module name="mexamen" />
         <module name="morden" />
+        <module name="mreligion" />
         <module name="demo1" />
       </profile>
     </annotationProcessing>
@@ -35,7 +37,9 @@
       <module name="mpaciente" options="-parameters" />
       <module name="mpacientes" options="-parameters" />
       <module name="mperfil" options="-parameters" />
+      <module name="mreligion" options="-parameters" />
       <module name="mtorden" options="-parameters" />
+      <module name="mtsangre" options="-parameters" />
       <module name="mtservicio" options="-parameters" />
     </option>
   </component>

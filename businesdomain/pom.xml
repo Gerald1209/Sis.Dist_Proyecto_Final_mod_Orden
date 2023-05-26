@@ -106,7 +106,7 @@
         <module>mexamen</module>
         <module>mtorden</module>
         <module>mtservicio</module>
-
-
+        <module>mtsangre</module>
+        <module>mreligion</module>
     </modules>
 </project>
