@@ -23,7 +23,7 @@ public class EmpleadoController {
     }
 
     // http://localhost:8080/api/empleados/1
-    @PutMapping("{id}")
+    @GetMapping("{id}")
     public  ResponseEntity<Empleado> listarPorId(@PathVariable("id") Long id){
         Empleado emp = empleadosService.listarPorId(id);
         return  new ResponseEntity<>(emp,HttpStatus.OK);

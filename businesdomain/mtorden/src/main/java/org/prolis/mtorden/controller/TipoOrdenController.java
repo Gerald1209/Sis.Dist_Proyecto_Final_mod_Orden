@@ -23,7 +23,7 @@ public class TipoOrdenController {
     }
 
     // http://localhost:8080/api/tipo_orden/1
-    @PutMapping("{id}")
+    @GetMapping("{id}")
     public  ResponseEntity<TipoOrden> listarPorId(@PathVariable("id") Long id){
         TipoOrden tipo_orden = tipoOrdenService.listarPorId(id);
         return  new ResponseEntity<>(tipo_orden,HttpStatus.OK);

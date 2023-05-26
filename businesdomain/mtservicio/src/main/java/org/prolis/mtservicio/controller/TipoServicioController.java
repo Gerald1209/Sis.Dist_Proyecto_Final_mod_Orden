@@ -22,7 +22,7 @@ public class TipoServicioController {
         return new ResponseEntity<>(tiposervicio, HttpStatus.OK);
     }
 
-    @PutMapping("{id}")
+    @GetMapping("{id}")
     public  ResponseEntity<TipoServicio> listarPorId(@PathVariable("id") Long id){
         TipoServicio tiposervicio = tipoServicioService.listarPorId(id);
         return  new ResponseEntity<>(tiposervicio,HttpStatus.OK);
