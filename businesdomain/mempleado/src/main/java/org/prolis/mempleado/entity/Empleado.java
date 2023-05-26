@@ -42,7 +42,7 @@ public class Empleado {
     @Column(name = "idestadocivil")
     private Long IdEstadoCivil;
 
-    @Column(name = "idestadocivil")
+    @Column(name = "idsexo")
     private Long IdSexo;
 
     @Column(name = "idnacionalidad")
