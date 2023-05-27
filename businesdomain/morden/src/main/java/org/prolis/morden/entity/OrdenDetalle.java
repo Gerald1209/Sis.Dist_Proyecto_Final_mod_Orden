@@ -16,6 +16,9 @@ public class OrdenDetalle {
     @Column(name = "idordendetalle")
     private Long IdOrdenDetalle;
 
+    @Column(name = "idorden")
+    private Long IdOrden;
+
     @Column(name = "idexamen")
     private Long IdExamen;
 

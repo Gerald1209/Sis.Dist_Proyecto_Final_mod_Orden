@@ -48,7 +48,7 @@ public class Orden {
 
     //Para obtener todos sus detalles ?????
     //TODO: Confirmar si este es su funcionamiento
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = OrdenDetalle.class)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = true, targetEntity = OrdenDetalle.class)
     @JoinColumn(name = "idorden", referencedColumnName = "idorden")
     private Set<OrdenDetalle> detalles = new HashSet<OrdenDetalle>();
 }
