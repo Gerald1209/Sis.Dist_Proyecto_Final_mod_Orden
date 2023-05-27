@@ -3,19 +3,16 @@ package org.prolis.morden.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
-import java.util.Collection;
-import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Data
 @Table(name = "tbl_ordenes")
-@Getter@Setter@AllArgsConstructor@NoArgsConstructor
 public class Orden {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "idorden")
     private Long IdOrden;
 
@@ -51,6 +48,7 @@ public class Orden {
 
     //Para obtener todos sus detalles ?????
     //TODO: Confirmar si este es su funcionamiento
-    @OneToMany(mappedBy = "orden" ,  cascade = CascadeType.ALL)
-    private Set<OrdenDetalle> detalles;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = OrdenDetalle.class)
+    @JoinColumn(name = "idorden", referencedColumnName = "idorden")
+    private Set<OrdenDetalle> detalles = new HashSet<OrdenDetalle>();
 }

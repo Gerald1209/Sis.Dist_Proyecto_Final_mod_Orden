@@ -24,8 +24,8 @@ public class OrdenDetalle {
 
     //TBD : Investigar Funcionamiento de relaciones en LOMBOK --
     //TODO: Para mientras queda asi https://medium.com/huawei-developers/database-relationships-in-spring-data-jpa-8d7181f50f60
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "idorden", referencedColumnName = "idorden")
-    private Orden orden;
+   // @ManyToOne(fetch = FetchType.EAGER, targetEntity = Orden.class)
+    //@JoinColumn(name = "idorden", referencedColumnName = "idorden")
+   // private Orden orden;
 
 }
