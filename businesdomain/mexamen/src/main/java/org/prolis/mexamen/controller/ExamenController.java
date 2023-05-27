@@ -29,4 +29,10 @@ public class ExamenController {
         List<Examen> paises = paisService.obtenerPais();
         return new ResponseEntity<>(paises, HttpStatus.OK);
     }
+
+    @GetMapping("{id}")
+    public  ResponseEntity<Examen> listarPorId(@PathVariable("id") Long id){
+        Examen tipo_orden = paisService.listarPorId(id);
+        return  new ResponseEntity<>(tipo_orden,HttpStatus.OK);
+    }
 }
