@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/businesdomain/empleado/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/examen/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/mpaciente/pom.xml" />
+        <option value="$PROJECT_DIR$/businesdomain/orden/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/paciente/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/torden/pom.xml" />
         <option value="$PROJECT_DIR$/businesdomain/tservicio/pom.xml" />

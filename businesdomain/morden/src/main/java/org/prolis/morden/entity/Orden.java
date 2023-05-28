@@ -16,7 +16,7 @@ public class Orden {
     @Column(name = "idorden")
     private Long IdOrden;
 
-    @Column(name = "n_orden")
+    @Column(name = "N_Orden")
     private String N_Orden;
 
     @Column(name = "idempleado")
@@ -48,7 +48,7 @@ public class Orden {
 
     //Para obtener todos sus detalles ?????
     //TODO: Confirmar si este es su funcionamiento
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = true, targetEntity = OrdenDetalle.class)
-    @JoinColumn(name = "idorden", referencedColumnName = "idorden")
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = OrdenDetalle.class)
+    @JoinColumn(name = "idorden", referencedColumnName = "idorden",nullable = false)
     private Set<OrdenDetalle> detalles = new HashSet<OrdenDetalle>();
 }

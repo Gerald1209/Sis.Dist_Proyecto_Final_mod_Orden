@@ -16,8 +16,11 @@ public class OrdenDetalle {
     @Column(name = "idordendetalle")
     private Long IdOrdenDetalle;
 
-    @Column(name = "idorden")
+    @Column(name = "idorden", updatable = false,insertable = false)
     private Long IdOrden;
+
+    @Column(name = "N_Orden")
+    private Long N_Orden;
 
     @Column(name = "idexamen")
     private Long IdExamen;

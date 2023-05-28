@@ -25,6 +25,7 @@
       <module name="mpaciente" target="17" />
       <module name="mpaciente.main" target="17" />
       <module name="mpaciente.test" target="17" />
+      <module name="orden" target="17" />
       <module name="paciente" target="17" />
       <module name="torden" target="17" />
       <module name="tservicio" target="17" />
