@@ -24,13 +24,13 @@ public class OrdenController {
         return new ResponseEntity<>(pais, HttpStatus.CREATED);
     }
 
-    // http://localhost:8080/api/pacientes
+    // http://localhost:8083/api/pacientes
     @GetMapping
     public ResponseEntity<List<Orden>> listarPais(){
         List<Orden> paises = ordenService.obtenerPais();
         return new ResponseEntity<>(paises, HttpStatus.OK);
     }
-    // http://localhost:8080/api/pacientes
+    // http://localhost:8083/api/pacientes
     @GetMapping("det")
     public ResponseEntity<List<OrdenDetalle>> listarDetalles(){
         List<OrdenDetalle> paises = ordenService.obtenerDet();

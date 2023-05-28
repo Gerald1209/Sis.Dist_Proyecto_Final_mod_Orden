@@ -23,13 +23,14 @@ public class ExamenController {
         return new ResponseEntity<>(pais, HttpStatus.CREATED);
     }
 
-    // http://localhost:8080/api/pacientes
+    // http://localhost:8085/api/pacientes
     @GetMapping
     public ResponseEntity<List<Examen>> listarPais(){
         List<Examen> paises = paisService.obtenerPais();
         return new ResponseEntity<>(paises, HttpStatus.OK);
     }
 
+    // http://localhost:8085/api/pacientes/1
     @GetMapping("{id}")
     public  ResponseEntity<Examen> listarPorId(@PathVariable("id") Long id){
         Examen tipo_orden = paisService.listarPorId(id);

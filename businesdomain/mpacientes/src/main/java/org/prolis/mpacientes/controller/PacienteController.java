@@ -16,13 +16,14 @@ import java.util.List;
 public class PacienteController {
     private PacienteService pacienteService;
 
-    // http://localhost:8080/api/pacientes
+    // http://localhost:8082/api/pacientes
     @GetMapping
     public ResponseEntity<List<Paciente>> listarPais(){
         List<Paciente> paciente = pacienteService.obtenerPacientes();
         return new ResponseEntity<>(paciente, HttpStatus.OK);
     }
 
+    // http://localhost:8082/api/pacientes/1
     @GetMapping("{id}")
     public  ResponseEntity<Paciente> listarPorId(@PathVariable("id") Long id){
         Paciente tiposervicio = pacienteService.listarPorId(id);

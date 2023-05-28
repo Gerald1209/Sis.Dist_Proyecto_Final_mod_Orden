@@ -16,14 +16,14 @@ import java.util.List;
 public class EmpleadoController {
     private EmpleadoService empleadosService;
 
-    // http://localhost:8080/api/empleados
+    // http://localhost:8088/api/empleados
     @GetMapping
     public ResponseEntity<List<Empleado>> listarEmpleados(){
         List<Empleado> emp = empleadosService.obtenerEmpleados();
         return new ResponseEntity<>(emp, HttpStatus.OK);
     }
 
-    // http://localhost:8080/api/empleados/1
+    // http://localhost:8088/api/empleados/1
     @GetMapping("{id}")
     public  ResponseEntity<Empleado> listarPorId(@PathVariable("id") Long id){
         Empleado emp = empleadosService.listarPorId(id);

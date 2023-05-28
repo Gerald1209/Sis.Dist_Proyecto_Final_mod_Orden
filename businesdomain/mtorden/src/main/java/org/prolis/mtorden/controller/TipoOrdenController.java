@@ -16,14 +16,14 @@ import java.util.List;
 public class TipoOrdenController {
     private TipoOrdenService tipoOrdenService;
 
-    // http://localhost:8080/api/tipo_orden
+    // http://localhost:8090/api/tipo_orden
     @GetMapping
     public ResponseEntity<List<TipoOrden>> listarTipoOrden(){
         List<TipoOrden> tipo_orden = tipoOrdenService.obtenerTipoOrden();
         return new ResponseEntity<>(tipo_orden, HttpStatus.OK);
     }
 
-    // http://localhost:8080/api/tipo_orden/1
+    // http://localhost:8090/api/tipo_orden/1
     @GetMapping("{id}")
     public  ResponseEntity<TipoOrden> listarPorId(@PathVariable("id") Long id){
         TipoOrden tipo_orden = tipoOrdenService.listarPorId(id);
